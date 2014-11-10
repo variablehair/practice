@@ -1,0 +1,9 @@
+fesums
+Tom Li | 2014
+
+fesums is a quick utility to sum the base max stats of each class in Fire Emblem: Awakening.
+It was written to practice basic Java IO. It takes the max stat in each category from 
+http://old.serenesforest.net/fe13/index.html, sums them, and writes the result to stdout.
+
+It is uncommented, likely very bad (was quite out of practice at the time), and was written
+in 1-2 hours.
