@@ -1,0 +1,26 @@
+hangman
+Tom Li | Nov 2014
+
+Simple Hangman game. The purpose was to practice:
+
+1. general Java skills and data structures
+2. building simple UI in Java using AWT
+3. understanding the usage of .jar files
+
+I did not care about:
+
+1. aesthetics (for the most part)
+2. using custom assets
+
+I ended up learning the most about:
+
+1. string operations and char arrays in Java.
+
+
+
+5. AWT.
+
+Surprisingly, I had way more trouble with doing String manipulations in
+non-naive ways than I did with learning the UI stuff. Still need more
+practice. I am sure keyTyped(), which manages the game, is suboptimal,
+though it certainly could be a lot worse.
