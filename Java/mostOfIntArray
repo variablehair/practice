@@ -1,0 +1,52 @@
+/* package whatever; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Boop {
+public Boop () {
+	super();
+}
+	
+public static void main (String[] args) throws java.lang.Exception {
+	int[] testArr = new int[10];
+	testArr[0] = 1;
+	testArr[1] = 2;
+	testArr[2] = 3;
+	testArr[3] = 3;
+	testArr[4] = 3;
+	testArr[5] = 6;
+	testArr[6] = 6;
+	testArr[7] = 6;
+	testArr[8] = 6;
+	testArr[9] = 100000;
+	
+	Boop boop = new Boop();
+	System.out.println(boop.mostOf(testArr));
+}
+
+public int mostOf(int[] arr) {
+		if (arr.length == 0) return -1;
+		else if (arr.length == 1) return arr[0];
+  		
+  		int curMaxCount = 1;
+  		int curMaxKey = arr[0];
+		HashMap<Integer, Integer> totals = new HashMap<Integer, Integer>(arr.length);
+		
+		for (int i : arr) {
+			if (totals.containsKey(i)) {
+				int temp = totals.get(i);
+				totals.put(i, ++temp);
+				if (temp > curMaxCount) {
+					curMaxCount++;
+					curMaxKey = i;
+				} 
+			} else {
+				totals.put(i, 1);
+			}
+		}
+		return curMaxKey;
+}
+}
